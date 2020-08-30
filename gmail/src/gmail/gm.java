@@ -1,11 +1,8 @@
 package gmail;
 
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
-import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -29,9 +26,9 @@ public class gm {
 	
 		
 		driver.get("https://www.gmail.com");
-		driver.findElement(By.id("identifierId")).sendKeys("jagadeeshsoftwaretesting");
+		driver.findElement(By.id("identifierId")).sendKeys("**********");
 		driver.findElement(By.xpath("//*[@id='identifierNext']")).click();
-		driver.findElement(By.name("password")).sendKeys("password@1234");
+		driver.findElement(By.name("password")).sendKeys("*******");
 		driver.findElement(By.xpath("//*[@id='passwordNext']")).click();
 		// click on the profile icon
 		driver.findElement(By.xpath("//*[@id='gb']/div[2]/div[3]/div/div[2]/div/a")).click();
